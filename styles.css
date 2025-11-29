@@ -1,0 +1,35 @@
+.cta-section {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.cta-section .btn-light {
+    color: #6a11cb;
+}
+
+.cta-section .btn-outline-light:hover {
+    color: #6a11cb;
+}
+
+.cta-section .card {
+    border-radius: 15px;
+}
+
+.cta-section .form-control {
+    border: none;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+.cta-section .btn-primary {
+    background-color: #6a11cb;
+    border-color: #6a11cb;
+}
+
+.cta-section .btn-primary:hover {
+    background-color: #5a0cb1;
+    border-color: #5a0cb1;
+}
+
+.form-group{
+    padding-bottom: 2rem;
+}
