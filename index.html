@@ -31,7 +31,7 @@
                     <div class="card border-0 shadow-lg">
                         <div class="card-body p-5">
                             <h3 class="card-title mb-4">Game Settings</h3>
-                            <form>
+                            <form id="asetukset">
                                 <div class="form-group">
                                     Chack-Out
                                     <select class="form-control form-control-lg">
@@ -40,14 +40,14 @@
                                 </div>
                                 <div class="form-group">
                                     Players
-                                    <select class="form-control form-control-lg">
+                                    <select id="pelaajia" class="form-control form-control-lg">
                                         <option selected value="1">1</option>
                                         <option value="2">2</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     Points
-                                    <select class="form-control form-control-lg">
+                                    <select id="pistemaara" class="form-control form-control-lg">
                                         <option selected value="301">301</option>
                                         <option value="501">501</option>
                                         <option value="701">701</option>
@@ -59,21 +59,80 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
         </section>
     </div>
     
     <!-- Pelitila -->
     <div id="peli" class="d-flex flex-column justify-content-center align-items-center">
-        <div id="p1" class="card text-center col-lg-6">
+
+        <!--Pisteiden syöttö-->
+        <div class="col-lg-6 piste-form">
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-5">
+                    <form id="heitto">
+                        <div class="mb-3">
+                            <label id="heittovuoro" for="heitonpisteet" class="form-label">Player 1 throws</label>
+                            <input 
+                                type="number" 
+                                class="form-control" 
+                                id="heitonpisteet" 
+                                placeholder="Enter points" 
+                                required
+                            />
+                        </div>
+                        <button type="submit" class="btn btn-success btn-lg btn-block">Enter Points</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Tuloskortit-->
+        <h2>Scorecards</h2>
+        <div id="p1" class="card text-center col-lg-6 pistekortit">
             <div class="card-header">
-                <h5 class="card-title">Scorecard</h5>
+                <h5 class="card-title">Player 1</h5>
             </div>
             <div class="card-body">
-                <table>
+                <div class="row">
+                    <div class="col-5">
+                        <h3 id="p1Pisteet">501</h3>
+                    </div>
+                    <div class="col-1">
+                        <p>-</p>
+                    </div>
+                    <div class="col-1">
+                        <p>-</p>
+                    </div>
+                    <div class="col-1">
+                        <p>-</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-body-secondary">
+                2 days ago
+            </div>
+        </div>
 
-                </table>
+        <div id="p2" class="card text-center col-lg-6 pistekortit">
+            <div class="card-header">
+                <h5 class="card-title">Player 2</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5">
+                        <h3 id="p2Pisteet">501</h3>
+                    </div>
+                    <div class="col-1">
+                        <p>-</p>
+                    </div>
+                    <div class="col-1">
+                        <p>-</p>
+                    </div>
+                    <div class="col-1">
+                        <p>-</p>
+                    </div>
+                </div>
             </div>
             <div class="card-footer text-body-secondary">
                 2 days ago
@@ -81,7 +140,7 @@
         </div>
     </div>
 
-    
+
 
     <!-- Lopetus -->
     <div id="lopetus">

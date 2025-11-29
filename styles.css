@@ -33,3 +33,20 @@
 .form-group{
     padding-bottom: 2rem;
 }
+
+h2{
+    color: white;
+}
+
+.pistekortit{
+    margin-bottom: 2rem;
+}
+
+.card-body p{
+    border-style: solid;
+}
+
+.piste-form{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
