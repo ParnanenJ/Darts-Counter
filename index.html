@@ -10,7 +10,7 @@
 <body class="bg-dark">
     <nav class="navbar navbar-light bg-success">
         <a class="navbar-brand" href="#">
-            <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+            <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
             Darts Counter
         </a>
     </nav>
@@ -34,7 +34,7 @@
                             <form id="asetukset">
                                 <div class="form-group">
                                     Chack-Out
-                                    <select class="form-control form-control-lg">
+                                    <select id="pelimuoto" class="form-control form-control-lg">
                                         <option selected value="so">Straight Out</option>
                                     </select>
                                 </div>
@@ -64,7 +64,7 @@
     </div>
     
     <!-- Pelitila -->
-    <div id="peli" class="d-flex flex-column justify-content-center align-items-center">
+    <div id="peli" class="flex-column justify-content-center align-items-center">
 
         <!--Pisteiden syöttö-->
         <div class="col-lg-6 piste-form">
@@ -94,7 +94,7 @@
                 <h5 class="card-title">Player 1</h5>
             </div>
             <div class="card-body">
-                <div class="row">
+                <div class="row heittohistoria">
                     <div class="col-5">
                         <h3 id="p1Pisteet">501</h3>
                     </div>
@@ -119,7 +119,7 @@
                 <h5 class="card-title">Player 2</h5>
             </div>
             <div class="card-body">
-                <div class="row">
+                <div class="row heittohistoria">
                     <div class="col-5">
                         <h3 id="p2Pisteet">501</h3>
                     </div>
@@ -144,11 +144,29 @@
 
     <!-- Lopetus -->
     <div id="lopetus">
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="card profile-card">
+                <div class="card-body text-center">
+                    <img src="images/trophy.png" alt="User Profile" class="mb-3 pokaali">
+                    <h1 class="card-title mb-2">Winner!</h1>
+                    <h5 id="voittaja" class="card-text text-muted mb-3">Player 1</h5>
+                    <div class="social-icons mb-4">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                    <button id="uusipeli" class="btn btn-success btn-lg w-100">New Game</button>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script> <!--Konfetti animaatio-->
     <script src="skript.js"></script>
 </body>
 </html>

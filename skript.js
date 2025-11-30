@@ -1,6 +1,7 @@
 
-
+$("#peli").hide();
 $("#p2").hide();
+$("#lopetus").hide();
 
 let p1Heitot = ["-", "-", "-"];
 let p2Heitot = ["-", "-", "-"];
@@ -16,8 +17,10 @@ $("#heitto").on("submit", player)
 function aloitus(e){
      e.preventDefault(); // estetään sivun uudelleen lataaminen
 
+     jsConfetti.addConfetti({emojis: ['🎯'],})
+
      // Näytetään pelitila ja piilotetaan aloitus
-      $("#peli").show();
+      $("#peli").addClass("d-flex").show();
       $("#aloitus").hide();
 
     // Tallennetaan pelaajien määrä ja valittu pistemäärä jota halutaan pelata
@@ -50,7 +53,9 @@ function laskuri(pelaaja, heitPisteet){
         }
         else if (p1Kokonaispisteet === 0){
             $("#lopetus").show();
-            $("#peli").hide();
+            $("#peli").hide().removeClass("d-flex");
+            $("#voittaja").html("Player 1");
+            setInterval(() => {jsConfetti.addConfetti();}, 1250); 
         }
 
         else{
@@ -69,7 +74,9 @@ function laskuri(pelaaja, heitPisteet){
         }
         else if (p2Kokonaispisteet === 0){
             $("#lopetus").show();
-            $("#peli").hide();
+            $("#peli").hide().removeClass("d-flex");
+            $("#voittaja").html("Player 2");
+            setInterval(() => {jsConfetti.addConfetti();}, 1250); 
         }
 
         else{
@@ -131,3 +138,12 @@ function player(e){
             $("#p1EdlH3").html(p1Heitot[2]);
     };
 };
+
+
+const jsConfetti = new JSConfetti();
+
+// 
+$("#uusipeli").on("click", function(){
+    location.reload();
+})
+  

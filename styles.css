@@ -42,7 +42,7 @@ h2{
     margin-bottom: 2rem;
 }
 
-.card-body p{
+.heittohistoria p{
     border-style: solid;
 }
 
@@ -50,3 +50,8 @@ h2{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.pokaali{
+    max-width: 300px;
+}
+
