@@ -37,37 +37,43 @@ function aloitus(e){
 
 
 function laskuri(pelaaja, heitPisteet){
-    let kokonaispisteet = parseInt($("#p1Pisteet").text(), 10);
+
+    // Pelaaja 1 pisteiden lakeminen
     if (pelaaja === "1"){
 
-        kokonaispisteet -= heitPisteet;
-        if (kokonaispisteet < 0) {
+        let p1Kokonaispisteet = parseInt($("#p1Pisteet").text(), 10);
+        p1Kokonaispisteet -= heitPisteet;
+        if (p1Kokonaispisteet < 0) {
             alert("Over");
+            p1Heitot.unshift(0);
             return;
         }
-        else if (kokonaispisteet === 0){
+        else if (p1Kokonaispisteet === 0){
             $("#lopetus").show();
             $("#peli").hide();
         }
 
         else{
-            $("#p1Pisteet").html(kokonaispisteet);
+            $("#p1Pisteet").html(p1Kokonaispisteet);
             p1Heitot.unshift(heitPisteet);
         };
     }
+    // Pelaaja 2 pisteiden lakeminen
     else{
-        kokonaispisteet -= heitPisteet;
-        if (kokonaispisteet < 0) {
+        let p2Kokonaispisteet = parseInt($("#p2Pisteet").text(), 10);
+        p2Kokonaispisteet -= heitPisteet;
+        if (p2Kokonaispisteet < 0) {
             alert("Over");
+            p2Heitot.unshift(0);
             return;
         }
-        else if (kokonaispisteet === 0){
+        else if (p2Kokonaispisteet === 0){
             $("#lopetus").show();
             $("#peli").hide();
         }
 
         else{
-            $("#p2Pisteet").html(kokonaispisteet);
+            $("#p2Pisteet").html(p2Kokonaispisteet);
             p2Heitot.unshift(heitPisteet);
         };
     };
@@ -89,13 +95,12 @@ function player(e){
 
         if (p1Heitot.length === p2Heitot.length){
             laskuri("1", heitonpisteet);
+            
             $("#heittovuoro").html("Player 2 throws");
-            p1Heitot.unshift(heitonpisteet);
         }
         else {
             laskuri("2", heitonpisteet);
             $("#heittovuoro").html("Player 1 throws");
-            p2Heitot.unshift(heitonpisteet);
         };
     }
     // Jos 1 --> ei vuorotella
