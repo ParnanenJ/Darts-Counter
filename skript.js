@@ -35,7 +35,7 @@ function aloitus(e){
     };
 };
 
-
+// Tällä funktiolla lasketaan pistemäärä oikealle pelaajalle
 function laskuri(pelaaja, heitPisteet){
 
     // Pelaaja 1 pisteiden lakeminen
@@ -94,18 +94,40 @@ function player(e){
     if (pelaajia === "2"){
 
         if (p1Heitot.length === p2Heitot.length){
+
+            // Laketaan p1 pisteet
             laskuri("1", heitonpisteet);
-            
+
+            // lisätään edelliset heitot näkyviin
+            $("#p1EdlH1").html(p1Heitot[0]);
+            $("#p1EdlH2").html(p1Heitot[1]);
+            $("#p1EdlH3").html(p1Heitot[2]);
+
+            // Muutetaan heittovototeksti
             $("#heittovuoro").html("Player 2 throws");
         }
         else {
+
+            // Laketaan p1 pisteet
             laskuri("2", heitonpisteet);
+
+            // lisätään edelliset heitot näkyviin
+            $("#p2EdlH1").html(p2Heitot[0]);
+            $("#p2EdlH2").html(p2Heitot[1]);
+            $("#p2EdlH3").html(p2Heitot[2]);
+
+            // Muutetaan heittovototeksti
             $("#heittovuoro").html("Player 1 throws");
         };
     }
     // Jos 1 --> ei vuorotella
     else {
-        p1Heitot.unshift(heitonpisteet);
+        // Lasketaan p1 pisteet
         laskuri("1", heitonpisteet);
+
+        // lisätään edelliset heitot näkyviin
+            $("#p1EdlH1").html(p1Heitot[0]);
+            $("#p1EdlH2").html(p1Heitot[1]);
+            $("#p1EdlH3").html(p1Heitot[2]);
     };
 };
