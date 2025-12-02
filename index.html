@@ -8,161 +8,168 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-dark">
-    <nav class="navbar navbar-light bg-success">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
-            Darts Counter
-        </a>
-    </nav>
-    <!-- Alkuvalikko -->
-    <div id="aloitus">
-        <section class="cta-section py-5 bg-gradient">
-            <div class="container">
-                <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="display-4 font-weight-bold text-white mb-4">Welcome to Darts Counter</h2>
-                    <p class="lead text-white-50 mb-4">Darts counter helps you to stay on track with your darts scorecard.</p>
-                    <div class="d-flex flex-wrap">
-                    <button class="btn btn-light btn-lg font-weight-bold mr-3 mb-3">Get Started</button>
-                    <button class="btn btn-outline-light btn-lg mb-3">Learn More</button>
+    <header></header>
+        <nav class="navbar navbar-light bg-success">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+                Darts Counter
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Alkuvalikko -->
+        <div id="aloitus">
+            <section class="cta-section py-5 bg-gradient">
+                <div class="container">
+                    <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 id="alkOtsikko" class="display-4 font-weight-bold text-white mb-4">Welcome to Darts Counter</h2>
+                        <p id="alkText" class="lead text-white-50 mb-4">Darts counter helps you to stay on track with your darts scorecard.</p>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow-lg">
-                        <div class="card-body p-5">
-                            <h3 class="card-title mb-4">Game Settings</h3>
-                            <form id="asetukset">
-                                <div class="form-group">
-                                    Chack-Out
-                                    <select id="pelimuoto" class="form-control form-control-lg">
-                                        <option selected value="so">Straight Out</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    Players
-                                    <select id="pelaajia" class="form-control form-control-lg">
-                                        <option selected value="1">1</option>
-                                        <option value="2">2</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    Points
-                                    <select id="pistemaara" class="form-control form-control-lg">
-                                        <option selected value="301">301</option>
-                                        <option value="501">501</option>
-                                        <option value="701">701</option>
-                                        <option value="1001">1001</option>
-                                    </select>
-                                </div>
-                                <button type="submit" class="btn btn-success btn-lg btn-block">Start Game</button>
-                            </form>
+                    <div class="col-lg-6">
+                        <div id="asetusKortti" class="card border-0 shadow-lg">
+                            <div class="card-body p-5">
+                                <h3 class="card-title mb-4">Game Settings</h3>
+                                <form id="asetukset">
+                                    <div class="form-group">
+                                        Chack-Out
+                                        <select id="pelimuoto" class="form-control form-control-lg">
+                                            <option selected value="so">Straight Out</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        Players
+                                        <select id="pelaajia" class="form-control form-control-lg">
+                                            <option selected value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        Points
+                                        <select id="pistemaara" class="form-control form-control-lg">
+                                            <option selected value="301">301</option>
+                                            <option value="501">501</option>
+                                            <option value="701">701</option>
+                                            <option value="1001">1001</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-lg btn-block">Start Game</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    
-    <!-- Pelitila -->
-    <div id="peli" class="flex-column justify-content-center align-items-center">
+            </section>
+        </div>
+        
+        <!-- Pelitila -->
+        <div id="peli" class="flex-column justify-content-center align-items-center">
 
-        <!--Pisteiden syöttö-->
-        <div class="col-lg-6 piste-form">
-            <div class="card border-0 shadow-lg">
-                <div class="card-body p-5">
-                    <form id="heitto">
-                        <div class="mb-3">
-                            <label id="heittovuoro" for="heitonpisteet" class="form-label">Player 1 throws</label>
-                            <input 
-                                type="number" 
-                                class="form-control" 
-                                id="heitonpisteet" 
-                                placeholder="Enter points" 
-                                required
-                            />
+            <!--Pisteiden syöttö-->
+            <div class="col-lg-6 piste-form">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <form id="heitto">
+                            <div class="mb-3">
+                                <label id="heittovuoro" for="heitonpisteet" class="form-label">Player 1 throws</label>
+                                <input 
+                                    type="number" 
+                                    class="form-control" 
+                                    id="heitonpisteet" 
+                                    placeholder="Enter points" 
+                                    required
+                                />
+                            </div>
+                            <button type="submit" class="btn btn-success btn-lg btn-block">Enter Points</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tuloskortit-->
+            <h2>Scorecards</h2>
+            <div id="p1" class="card text-center col-lg-6 pistekortit">
+                <div class="card-header">
+                    <h5 class="card-title">Player 1</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row heittohistoria">
+                        <div class="col-5">
+                            <h3 id="p1Pisteet">501</h3>
                         </div>
-                        <button type="submit" class="btn btn-success btn-lg btn-block">Enter Points</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!--Tuloskortit-->
-        <h2>Scorecards</h2>
-        <div id="p1" class="card text-center col-lg-6 pistekortit">
-            <div class="card-header">
-                <h5 class="card-title">Player 1</h5>
-            </div>
-            <div class="card-body">
-                <div class="row heittohistoria">
-                    <div class="col-5">
-                        <h3 id="p1Pisteet">501</h3>
-                    </div>
-                    <div class="col-1">
-                        <p id="p1EdlH1">-</p>
-                    </div>
-                    <div class="col-1">
-                        <p id="p1EdlH2">-</p>
-                    </div>
-                    <div class="col-1">
-                        <p id="p1EdlH3">-</p>
+                        <div class="col-1">
+                            <p id="p1EdlH1">-</p>
+                        </div>
+                        <div class="col-1">
+                            <p id="p1EdlH2">-</p>
+                        </div>
+                        <div class="col-1">
+                            <p id="p1EdlH3">-</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-footer text-body-secondary">
-                2 days ago
-            </div>
-        </div>
-
-        <div id="p2" class="card text-center col-lg-6 pistekortit">
-            <div class="card-header">
-                <h5 class="card-title">Player 2</h5>
-            </div>
-            <div class="card-body">
-                <div class="row heittohistoria">
-                    <div class="col-5">
-                        <h3 id="p2Pisteet">501</h3>
-                    </div>
-                    <div class="col-1">
-                        <p id="p2EdlH1">-</p>
-                    </div>
-                    <div class="col-1">
-                        <p id="p2EdlH2">-</p>
-                    </div>
-                    <div class="col-1">
-                        <p id="p2EdlH3">-</p>
-                    </div>
+                <div class="card-footer text-body-secondary">
+                    2 days ago
                 </div>
             </div>
-            <div class="card-footer text-body-secondary">
-                2 days ago
-            </div>
-        </div>
-    </div>
 
-
-
-    <!-- Lopetus -->
-    <div id="lopetus">
-        <div class="container d-flex justify-content-center align-items-center min-vh-100">
-            <div class="card profile-card">
-                <div class="card-body text-center">
-                    <img src="images/trophy.png" alt="User Profile" class="mb-3 pokaali">
-                    <h1 class="card-title mb-2">Winner!</h1>
-                    <h5 id="voittaja" class="card-text text-muted mb-3">Player 1</h5>
-                    <div class="social-icons mb-4">
-                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
+            <div id="p2" class="card text-center col-lg-6 pistekortit">
+                <div class="card-header">
+                    <h5 class="card-title">Player 2</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row heittohistoria">
+                        <div class="col-5">
+                            <h3 id="p2Pisteet">501</h3>
+                        </div>
+                        <div class="col-1">
+                            <p id="p2EdlH1">-</p>
+                        </div>
+                        <div class="col-1">
+                            <p id="p2EdlH2">-</p>
+                        </div>
+                        <div class="col-1">
+                            <p id="p2EdlH3">-</p>
+                        </div>
                     </div>
-                    <button id="uusipeli" class="btn btn-success btn-lg w-100">New Game</button>
+                </div>
+                <div class="card-footer text-body-secondary">
+                    2 days ago
                 </div>
             </div>
         </div>
 
 
-    </div>
+
+        <!-- Lopetus -->
+        <div id="lopetus">
+            <div class="container d-flex justify-content-center align-items-center min-vh-100">
+                <div id="voittajaKortti" class="card profile-card">
+                    <div class="card-body text-center">
+                        <img src="images/trophy.png" alt="User Profile" class="mb-3 pokaali">
+                        <h1 class="card-title mb-2">Winner!</h1>
+                        <h5 id="voittaja" class="card-text text-muted mb-3">Player 1</h5>
+                        <div class="social-icons mb-4">
+                            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                        <button id="uusipeli" class="btn btn-success btn-lg w-100">New Game</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="bg-success">
+            <p>Copyright &copy; 2025. All rights reserved.</p>
+            <p>by Jiro Pärnänen</p>
+        </div>
+    </footer>
 
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

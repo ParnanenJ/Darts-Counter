@@ -1,7 +1,19 @@
 
+// piilotetaan tarvittavat tavarat
 $("#peli").hide();
 $("#p2").hide();
 $("#lopetus").hide();
+$("#alkOtsikko").hide();
+$("#alkText").hide();
+$("#asetusKortti").hide();
+
+// Liu'utetaan alku elementit esiin
+$('#alkOtsikko').slideDown(1000, function() {
+    $('#alkText').slideDown(1000, function() {
+        $('#asetusKortti').slideDown(2000);
+    });
+});
+
 
 let p1Heitot = ["-", "-", "-"];
 let p2Heitot = ["-", "-", "-"];
@@ -17,6 +29,7 @@ $("#heitto").on("submit", player)
 function aloitus(e){
      e.preventDefault(); // estetään sivun uudelleen lataaminen
 
+     // Lisätään emoji sade
      jsConfetti.addConfetti({emojis: ['🎯'],})
 
      // Näytetään pelitila ja piilotetaan aloitus
@@ -44,42 +57,74 @@ function laskuri(pelaaja, heitPisteet){
     // Pelaaja 1 pisteiden lakeminen
     if (pelaaja === "1"){
 
+        // lasketaan heitetyt pisteet jäljellä olevista pisteistä
         let p1Kokonaispisteet = parseInt($("#p1Pisteet").text(), 10);
         p1Kokonaispisteet -= heitPisteet;
+
+        // jos tulos menee yli -> annetaan ilmoitus ja merkataan piste historiaan nolla (ei vähennetä pisteitä)
         if (p1Kokonaispisteet < 0) {
             alert("Over");
             p1Heitot.unshift(0);
             return;
         }
+
+        // jos pelaaja saa 0 -> lopetetaan peli
         else if (p1Kokonaispisteet === 0){
+
+            // näytetään lopetus osio ja piilotetaan peli osio
             $("#lopetus").show();
             $("#peli").hide().removeClass("d-flex");
+            // merkataan voittaja lopetusosioon
             $("#voittaja").html("Player 1");
+            // lisätään konfettisade
             setInterval(() => {jsConfetti.addConfetti();}, 1250); 
         }
 
+        // jos pisteitää jää jäljelle -> jatketaan peliä
         else{
+            // jos pelaaja heittää 180 -> tehdään animaatio
+            if (heitPisteet === 180){
+            jsConfetti.addConfetti({emojis: ['180'],}).then(() => jsConfetti.addConfetti());
+            }
+
+            // päivitetään pisteet ja lisätään heitetty pistemäärä listaan
             $("#p1Pisteet").html(p1Kokonaispisteet);
             p1Heitot.unshift(heitPisteet);
         };
     }
     // Pelaaja 2 pisteiden lakeminen
     else{
+        // lasketaan heitetyt pisteet jäljellä olevista pisteistä
         let p2Kokonaispisteet = parseInt($("#p2Pisteet").text(), 10);
         p2Kokonaispisteet -= heitPisteet;
+
+        // jos tulos menee yli -> annetaan ilmoitus ja merkataan piste historiaan nolla (ei vähennetä pisteitä)
         if (p2Kokonaispisteet < 0) {
             alert("Over");
             p2Heitot.unshift(0);
             return;
         }
+
+        // jos pelaaja saa 0 -> lopetetaan peli
         else if (p2Kokonaispisteet === 0){
+
+            // näytetään lopetus osio ja piilotetaan peli osio
             $("#lopetus").show();
             $("#peli").hide().removeClass("d-flex");
+            // merkataan voittaja lopetusosioon
             $("#voittaja").html("Player 2");
+            // lisätään konfettisade
             setInterval(() => {jsConfetti.addConfetti();}, 1250); 
         }
 
+        // jos pisteitää jää jäljelle -> jatketaan peliä
         else{
+            // jos pelaaja heittää 180 -> tehdään animaatio
+            if (heitPisteet === 180){
+            jsConfetti.addConfetti({emojis: ['180'],}).then(() => jsConfetti.addConfetti());
+            }
+
+            // päivitetään pisteet ja lisätään heitetty pistemäärä listaan
             $("#p2Pisteet").html(p2Kokonaispisteet);
             p2Heitot.unshift(heitPisteet);
         };
@@ -142,8 +187,10 @@ function player(e){
 
 const jsConfetti = new JSConfetti();
 
-// 
+// jos halutaan pelata uusi peli -> ladataan sivu uudelleen
 $("#uusipeli").on("click", function(){
     location.reload();
 })
+
+
   
