@@ -62,6 +62,7 @@ Lista l채hteist채 ja esimerkeist채, joita k채ytit projektin aikana. Mainitse my�
 
 https://bootstrapexamples.com/@ross-wille/cta-block
 https://codepen.io/ieatwebsites/pen/KKBvywP
+https://bootstrapexamples.com/@anonymous/user-profile-card-with-social-icons-using-bootstrap-5
 
 ## Lisenssi
 Valitse projektille lisenssi seuraamalla t채t채 [opasta](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).

@@ -16,7 +16,7 @@ $('#alkOtsikko').slideDown(1000, function() {
     });
 });
 
-
+// luodaan heittohistorialistat
 let p1Heitot = ["-", "-", "-"];
 let p2Heitot = ["-", "-", "-"];
 
@@ -190,7 +190,7 @@ function player(e){
     };
 };
 
-
+// luodaan uusi olio confetti kirjastoa varten
 const jsConfetti = new JSConfetti();
 
 // jos halutaan pelata uusi peli -> ladataan sivu uudelleen
