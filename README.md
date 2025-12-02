@@ -1,25 +1,17 @@
 # Projektin nimi ja tekijät
-Projektin nimi ja kaikki mukana olevat tekijät. 
+Darts Counter - Jiro Pärnänen
 
 ## Verkkolinkit:
 Pääset julkaistuun sovellukseen käsiksi osoitteessa [google.com](https://google.com)
 Linkki projektin videoesittelyyn [google.com](https://google.com)
 
-## Työn jakautuminen 
-Miten työmäärä jaettiin? Kuka teki mitä? Miten yhteistyö sujui?
-
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
-Mielestäni onnistuin...
-Parantamista olisi...
-Sovelluksesta jäi puuttumaan...
-Koen, että olen oppinut...
-Epäselväksi jäi...
-Antaisin itselleni pisteitä seuraavasti: xx/yy p
+Mielestäni onnistuin onnistuin toteuttamaan sovelluksen aika hyvin. Muutamasta ominaisuudesta jouduin tinkimään, mutta niitä pystyisi varmasti myöhemmin lisäämään.  
+Koen, että olen oppinut kurssin asiat hyvin ja etenkin tämän projektin kohdalla opin käyttämään ja hyödyntämään jQueryä.  
+Antaisin itselleni pisteitä seuraavasti: 10/10 p
 
 ## Palaute opettajalle kurssista sekä itse opetuksesta tähän saakka
-Kurssi sekä lähiopetus ovat tuntuneet... 
-Oppimistani tukisi jos...
-
+Kurssi on ollut erittäin selkä ja kiinnostava. Lähiopetuksissa olen tykännyt siitä että on päässyt aina näkemään käytännön esimerkkejä kurssin aihealueista. 
 
 ## Sisällysluettelo:
 
@@ -33,10 +25,11 @@ Oppimistani tukisi jos...
 - [Lisenssi](#lisenssi)
 
 ## Tietoja sovelluksesta
-[Projektin nimi] on sovellus, joka ...
+[Darts Counter] on sovellus, joka laskee darts pelin pisteitä. Sovellus helpottaa dartsin pelaamista siten, että jokaisen heittovuoron pisteet lisätään sovellukseen jonka jälkeen sovellus laskee jäljelle jäävät kokonaispisteet.
+Sovellus näyttää myös kolmen edellisen heittovuoron pistehistorian. Sovellus mahdollistaa tällähetkellä enintään kahden pelaajan pisteiden laskun samanaikaisesti.
 
 ## Tunnetut virheet/bugit
-Kerro jos tiedät sovelluksessa olevan jotain, mikä ei toimi tai toimii heikosti
+-
 
 ## Kuvakaappaukset
 Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta  
@@ -45,26 +38,27 @@ Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta
 Kuva: [Kelly Sikkema](https://unsplash.com/@kellysikkema)
 
 ## Teknologiat
-Kuvaa, mitä teknologioita käytettiin ja mikä oli niiden rooli projektissasi.  
-Käytin seuraavia teknologioita: `html`, `css`, ...
+Käytin seuraavia teknologioita: `html`, `css`, `Bootstrap`, `Javascript`, `jQuery`, `js-confetti -kirjastoa`  
+- `html`: Käyttöliittymän luominen  
+- `css`: käyttöliittymän tyylien luominen  
+- `Bootstrap`: käyttöliittymän tyylien luominen  
+- `Javascript`: sovelluksen toiminnallisuuksien luominen  
+- `jQuery`: Javascriptin kirjoittamisen nopeuttaminen ja animaatioiden luominen  
+- `js-confetti -kirjastoa`: erilaisten konfettisateiden luominen  
 
 ## Asennus
-Kirjoita lyhyet ohjeet sovelluksen käynnistämiseen ja käyttöön. Esimerkiksi:  
-- lataa kaikki tiedostot ja avaa index.html selaimessasi  
-- lataa tai kloonaa repositorio  
-- suorita `npm install`  
-- ...
+- lataa kaikki tiedostot ja avaa index.html selaimessasi
+- lataa tai kloonaa repositorio
+- käytä aiemmin mainittua linkkiä
 
 ## Kiitokset
 Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse myös, jos käytit ChatGPT:tä tai muita tekoälytyökaluja koodauksen aikana ja kerro, miten ne auttoivat sinua.  
-- [John Doe](johndoe.com)  
-- [Beginners guide to BEM](link-goes-here.com)  
-
-https://bootstrapexamples.com/@ross-wille/cta-block
-https://codepen.io/ieatwebsites/pen/KKBvywP
-https://bootstrapexamples.com/@anonymous/user-profile-card-with-social-icons-using-bootstrap-5
+- [Ross Wille](https://bootstrapexamples.com/@ross-wille/cta-block)  
+- [Jay](https://codepen.io/ieatwebsites/pen/KKBvywP)
+- [BootstrapExamples (Anonymous)](https://bootstrapexamples.com/@anonymous/user-profile-card-with-social-icons-using-bootstrap-5)
+- Projektissa on hyödynnetty ChatGPT:ä koodin tarkistukseen ja virheiden kojaaamiseen. 
 
 ## Lisenssi
 Valitse projektille lisenssi seuraamalla tätä [opasta](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
 
-Esimerkki: MIT-lisenssi @ [tekijä](author.com)
+MIT-lisenssi @ ParnanenJ
