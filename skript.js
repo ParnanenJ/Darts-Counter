@@ -2,10 +2,12 @@
 // piilotetaan tarvittavat tavarat
 $("#peli").hide();
 $("#p2").hide();
+$("#voittajaKortti").hide();
 $("#lopetus").hide();
 $("#alkOtsikko").hide();
 $("#alkText").hide();
 $("#asetusKortti").hide();
+
 
 // Liu'utetaan alku elementit esiin
 $('#alkOtsikko').slideDown(1000, function() {
@@ -76,6 +78,8 @@ function laskuri(pelaaja, heitPisteet){
             $("#peli").hide().removeClass("d-flex");
             // merkataan voittaja lopetusosioon
             $("#voittaja").html("Player 1");
+            // Liu'utetaan korttinäkyviin
+            $('#voittajaKortti').slideDown(2000);
             // lisätään konfettisade
             setInterval(() => {jsConfetti.addConfetti();}, 1250); 
         }
@@ -113,6 +117,8 @@ function laskuri(pelaaja, heitPisteet){
             $("#peli").hide().removeClass("d-flex");
             // merkataan voittaja lopetusosioon
             $("#voittaja").html("Player 2");
+            // Liu'utetaan korttinäkyviin
+            $('#voittajaKortti').slideDown(2000);
             // lisätään konfettisade
             setInterval(() => {jsConfetti.addConfetti();}, 1250); 
         }
@@ -121,8 +127,8 @@ function laskuri(pelaaja, heitPisteet){
         else{
             // jos pelaaja heittää 180 -> tehdään animaatio
             if (heitPisteet === 180){
-            jsConfetti.addConfetti({emojis: ['180'],}).then(() => jsConfetti.addConfetti());
-            }
+                jsConfetti.addConfetti({emojis: ['180'],}).then(() => jsConfetti.addConfetti());
+            };
 
             // päivitetään pisteet ja lisätään heitetty pistemäärä listaan
             $("#p2Pisteet").html(p2Kokonaispisteet);

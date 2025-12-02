@@ -11,7 +11,7 @@
     <header></header>
         <nav class="navbar navbar-light bg-success">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+                <img src="images/logo.png" width="45" height="40" class="d-inline-block align-top" alt="Logo">
                 Darts Counter
             </a>
         </nav>
@@ -40,14 +40,14 @@
                                     </div>
                                     <div class="form-group">
                                         Players
-                                        <select id="pelaajia" class="form-control form-control-lg">
+                                        <select id="pelaajia" class="valikkoValinta form-control form-control-lg">
                                             <option selected value="1">1</option>
                                             <option value="2">2</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         Points
-                                        <select id="pistemaara" class="form-control form-control-lg">
+                                        <select id="pistemaara" class="valikkoValinta form-control form-control-lg">
                                             <option selected value="301">301</option>
                                             <option value="501">501</option>
                                             <option value="701">701</option>
@@ -79,6 +79,8 @@
                                     id="heitonpisteet" 
                                     placeholder="Enter points" 
                                     required
+                                    min="0"
+                                    max="180"
                                 />
                             </div>
                             <button type="submit" class="btn btn-success btn-lg btn-block">Enter Points</button>
@@ -109,9 +111,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-footer text-body-secondary">
-                    2 days ago
-                </div>
             </div>
 
             <div id="p2" class="card text-center col-lg-6 pistekortit">
@@ -133,9 +132,6 @@
                             <p id="p2EdlH3">-</p>
                         </div>
                     </div>
-                </div>
-                <div class="card-footer text-body-secondary">
-                    2 days ago
                 </div>
             </div>
         </div>
