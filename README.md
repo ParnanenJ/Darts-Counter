@@ -1,12 +1,12 @@
-# Projektin nimi ja tekijät
-Darts Counter - Jiro Pärnänen
+# Darts Counter
+Jiro Pärnänen
 
 ## Verkkolinkit:
 Pääset julkaistuun sovellukseen käsiksi osoitteessa [netlify.com](https://dartscounter-parnanenj.netlify.app/) tai [Github.io](https://parnanenj.github.io/Darts-Counter/)  
 Linkki projektin videoesittelyyn [video.laurea.fi](https://video.laurea.fi/media/t/0_3esy64vj)
 
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
-Mielestäni onnistuin onnistuin toteuttamaan sovelluksen aika hyvin. Muutamasta ominaisuudesta jouduin tinkimään, mutta niitä pystyisi varmasti myöhemmin lisäämään.  
+Mielestäni onnistuin toteuttamaan sovelluksen aika hyvin. Muutamasta ominaisuudesta jouduin tinkimään, mutta niitä pystyisi varmasti myöhemmin lisäämään.  
 Koen, että olen oppinut kurssin asiat hyvin ja etenkin tämän projektin kohdalla opin käyttämään ja hyödyntämään jQueryä.  
 Antaisin itselleni pisteitä seuraavasti: 10/10 p
 
