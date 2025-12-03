@@ -2,8 +2,8 @@
 Darts Counter - Jiro Pärnänen
 
 ## Verkkolinkit:
-Pääset julkaistuun sovellukseen käsiksi osoitteessa [google.com](https://google.com)
-Linkki projektin videoesittelyyn [google.com](https://google.com)
+Pääset julkaistuun sovellukseen käsiksi osoitteessa [google.com](https://google.com)  
+Linkki projektin videoesittelyyn [video.laurea.fi](https://video.laurea.fi/media/t/0_3esy64vj)
 
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
 Mielestäni onnistuin onnistuin toteuttamaan sovelluksen aika hyvin. Muutamasta ominaisuudesta jouduin tinkimään, mutta niitä pystyisi varmasti myöhemmin lisäämään.  
@@ -37,7 +37,7 @@ Aloitus
 Pelitila  
 ![Kirjoittaminen](https://github.com/ParnanenJ/Darts-Counter/blob/main/images/ss2.png)  
 Pelitila efektit  
-![Kirjoittaminen](https://github.com/ParnanenJ/Darts-Counter/blob/main/images/ss2.png)  
+![Kirjoittaminen](https://github.com/ParnanenJ/Darts-Counter/blob/main/images/ss3.png)  
 Lopetus  
 ![Kirjoittaminen](https://github.com/ParnanenJ/Darts-Counter/blob/main/images/ss4.png)  
 
@@ -63,6 +63,4 @@ Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse my�
 - Projektissa on hyödynnetty ChatGPT:ä koodin tarkistukseen ja virheiden kojaaamiseen. 
 
 ## Lisenssi
-Valitse projektille lisenssi seuraamalla tätä [opasta](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
-
 MIT-lisenssi @ ParnanenJ
