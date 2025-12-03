@@ -16,7 +16,7 @@ Kurssi on ollut erittäin selkä ja kiinnostava. Lähiopetuksissa olen tykännyt
 ## Sisällysluettelo:
 
 - [Tietoja sovelluksesta](#tietoja-sovelluksesta)
-- [Tunnetut virheet/bugit](#Tunnetut virheet/bugit)
+- [Tunnetut virheet/bugit](#Tunnetut_virheet/bugit)
 - [Kuvakaappaukset](#kuvakaappaukset)
 - [Teknologiat](#teknologiat)
 - [Asennus](#asennus)
@@ -25,17 +25,21 @@ Kurssi on ollut erittäin selkä ja kiinnostava. Lähiopetuksissa olen tykännyt
 - [Lisenssi](#lisenssi)
 
 ## Tietoja sovelluksesta
-[Darts Counter] on sovellus, joka laskee darts pelin pisteitä. Sovellus helpottaa dartsin pelaamista siten, että jokaisen heittovuoron pisteet lisätään sovellukseen jonka jälkeen sovellus laskee jäljelle jäävät kokonaispisteet.
+Darts Counter on sovellus, joka laskee darts pelin pisteitä. Sovellus helpottaa dartsin pelaamista siten, että jokaisen heittovuoron pisteet lisätään sovellukseen jonka jälkeen sovellus laskee jäljelle jäävät kokonaispisteet.
 Sovellus näyttää myös kolmen edellisen heittovuoron pistehistorian. Sovellus mahdollistaa tällähetkellä enintään kahden pelaajan pisteiden laskun samanaikaisesti.
 
 ## Tunnetut virheet/bugit
 -
 
 ## Kuvakaappaukset
-Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta  
-`![Kirjoittaminen](https://unsplash.com/photos/VBPzRgd7gfc)`
-
-Kuva: [Kelly Sikkema](https://unsplash.com/@kellysikkema)
+Aloitus  
+![Kirjoittaminen](https://github.com/ParnanenJ/Darts-Counter/blob/main/images/ss1.png)  
+Pelitila  
+![Kirjoittaminen](https://github.com/ParnanenJ/Darts-Counter/blob/main/images/ss2.png)  
+Pelitila efektit  
+![Kirjoittaminen](https://github.com/ParnanenJ/Darts-Counter/blob/main/images/ss2.png)  
+Lopetus  
+![Kirjoittaminen](https://github.com/ParnanenJ/Darts-Counter/blob/main/images/ss4.png)  
 
 ## Teknologiat
 Käytin seuraavia teknologioita: `html`, `css`, `Bootstrap`, `Javascript`, `jQuery`, `js-confetti -kirjastoa`  
