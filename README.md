@@ -2,7 +2,7 @@
 Darts Counter - Jiro Pärnänen
 
 ## Verkkolinkit:
-Pääset julkaistuun sovellukseen käsiksi osoitteessa [google.com](https://google.com)  
+Pääset julkaistuun sovellukseen käsiksi osoitteessa [netlify.com](dartscounter-parnanenj.netlify.app) tai [Github.io](https://parnanenj.github.io/Darts-Counter/)  
 Linkki projektin videoesittelyyn [video.laurea.fi](https://video.laurea.fi/media/t/0_3esy64vj)
 
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
