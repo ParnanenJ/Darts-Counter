@@ -55,8 +55,7 @@ Käytin seuraavia teknologioita: `html`, `css`, `Bootstrap`, `Javascript`, `jQue
 - lataa tai kloonaa repositorio
 - käytä aiemmin mainittua linkkiä
 
-## Kiitokset
-Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse myös, jos käytit ChatGPT:tä tai muita tekoälytyökaluja koodauksen aikana ja kerro, miten ne auttoivat sinua.  
+## Kiitokset 
 - [Ross Wille](https://bootstrapexamples.com/@ross-wille/cta-block)  
 - [Jay](https://codepen.io/ieatwebsites/pen/KKBvywP)
 - [BootstrapExamples (Anonymous)](https://bootstrapexamples.com/@anonymous/user-profile-card-with-social-icons-using-bootstrap-5)
